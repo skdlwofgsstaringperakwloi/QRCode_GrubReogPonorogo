@@ -5,15 +5,15 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
 
-class RetrofitConfig {
-    private const val GITHUB_API_KEY = "aaa"
+object RetrofitConfig {
+    private const val REOG_API_KEY = "aaa"
 
     private val client by lazy {
         OkHttpClient.Builder()
             .addInterceptor { chain ->
                 val original = chain.request()
                 val requestBuilder = original.newBuilder()
-                    .header("Authorization",GITHUB_API_KEY) // REPLACE GITHUB_API_KEY WITH YOUR GITHUB API KEY
+                    .header("Authorization",REOG_API_KEY)
                 val request = requestBuilder.build()
                 chain.proceed(request)
             }
@@ -24,7 +24,7 @@ class RetrofitConfig {
 
     private val retrofitBuilder: Retrofit.Builder by lazy {
         Retrofit.Builder()
-            .baseUrl("https://api.github.com")
+            .baseUrl("https://www.reog.com")
             .client(client)
             .addConverterFactory(GsonConverterFactory.create())
             .addConverterFactory(GsonConverterFactory.create())

@@ -8,10 +8,10 @@ class ApiClient {
     @GET("users/{username}/followers")
     suspend fun userFollower(
         @Path("username") username: String?
-    ): List<GithubUser>
+    ): List<ReogUser>
 
     @GET("users/{username}/following")
     suspend fun userFollowing(
         @Path("username") username: String?
-    ): List<GithubUser>
+    ): List<ReogUser>
 }
