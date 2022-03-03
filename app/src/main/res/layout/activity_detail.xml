@@ -1,6 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".activities.DetailActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:background="@drawable/reog"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_profil"
+        android:src="@drawable/naruto"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="180dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tv_profil_name"
+        android:text="Ilham Bagus Bahrudin"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:layout_marginTop="320dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="370dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/id_profil"
+            android:text="ID : "
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/nama"
+            android:text="Nama : "
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="60dp"/>
+
+        <TextView
+            android:id="@+id/pemilik"
+            android:text="Pemilik : "
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="85dp"/>
+
+        <TextView
+            android:id="@+id/pekerjaan"
+            android:text="Pekerjaan : "
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="110dp"/>
+
+        <TextView
+            android:id="@+id/alamat"
+            android:text="Alamat : "
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="135dp"
+            android:layout_marginBottom="20dp"/>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

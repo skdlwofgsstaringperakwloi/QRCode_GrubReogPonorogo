@@ -1,4 +1,4 @@
-package bahrudin.bagus.qrcode_grubreogponorogo
+package bahrudin.bagus.qrcode_grubreogponorogo.activities
 
 import android.Manifest
 import android.content.pm.PackageManager
