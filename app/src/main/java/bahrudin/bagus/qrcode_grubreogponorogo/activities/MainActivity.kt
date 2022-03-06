@@ -6,6 +6,7 @@ import android.os.Build
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import bahrudin.bagus.qrcode_grubreogponorogo.R
 import com.budiyev.android.codescanner.*
 
 

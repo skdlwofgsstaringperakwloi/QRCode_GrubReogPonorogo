@@ -9,14 +9,4 @@ interface ApiClient {
     suspend fun userDetail(
         @Path("id") id: Int
     ): ReogUser
-
-    @GET("api/v1/groups/{name}")
-    suspend fun userDetail(
-        @Path("id") name: String?
-    ): List<ReogUser>
-
-    @GET("api/v1/groups/{owner}")
-    suspend fun userDetail(
-        @Path("id") owner: String?
-    ): List<ReogUser>
 }
