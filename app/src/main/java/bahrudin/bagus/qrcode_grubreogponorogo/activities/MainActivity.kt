@@ -35,6 +35,8 @@ class MainActivity : AppCompatActivity() {
         // Callbacks
         codeScanner.decodeCallback = DecodeCallback {
 
+
+
             runOnUiThread {
                 Toast.makeText(this, "Scan result: ${it.text}", Toast.LENGTH_LONG).show()
             }
