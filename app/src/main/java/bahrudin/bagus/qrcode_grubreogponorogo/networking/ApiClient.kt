@@ -7,9 +7,14 @@ import retrofit2.http.Query
 
 interface ApiClient {
 
+    @GET("search/users")
+    suspend fun searchUsers(
+        @Query("q") q: String?
+    ): SearchRespond
+
     @GET("api/v1/groups/{id}")
     suspend fun userDetail(
-        @Path("id") id: Int
+        @Path("id") id: String?
     ): ReogUser
 
 //    @GET("search/users")

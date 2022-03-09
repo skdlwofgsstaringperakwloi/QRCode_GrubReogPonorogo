@@ -5,7 +5,7 @@ import kotlinx.android.parcel.Parcelize
 
 @Parcelize
 data class ReogUser(
-    val id: Int,
+    val id: String?,
 //    val avatar_url: String,
     val name: String?,
     val owner: String?,
