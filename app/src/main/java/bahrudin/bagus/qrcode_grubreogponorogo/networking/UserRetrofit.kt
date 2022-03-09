@@ -6,6 +6,15 @@ import kotlinx.coroutines.Dispatchers
 
 object UserRetrofit {
 
+//    fun searchUsers(query: String) = liveData(Dispatchers.IO) {
+//        try {
+//            val userSearch = RetrofitConfig.apiClient.searchUsers(query)
+//            emit(Resource.success(userSearch.items))
+//        } catch (exception: Exception) {
+//            emit(Resource.error(null, exception.message ?: "Error"))
+//        }
+//    }
+
     fun getDetailUser(id: Int) = liveData(Dispatchers.IO) {
         try {
             emit(Resource.success(RetrofitConfig.apiClient.userDetail(id)))
